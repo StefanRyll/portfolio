@@ -137,7 +137,7 @@
         }
         
         h1 {
-            font-size: min(calc(20px + (40 - 20) * ((100vw - 320px) / (1048 - 320))), 50px);
+            font-size: min(calc(20px + (33 - 20) * ((100vw - 320px) / (1048 - 320))), 33px);
         }
         
         h2 {
@@ -145,7 +145,7 @@
         }
         
         .text-size {
-            font-size: min(calc(12px + (16 - 12) * ((100vw - 320px) / (1048 - 320))), 16px);
+            font-size: min(calc(14px + (18 - 14) * ((100vw - 320px) / (1048 - 320))), 18px);
         }
         
         a {

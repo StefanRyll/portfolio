@@ -21,5 +21,4 @@ export class HeroSectionComponent {
   switchLanguage(lang: string) {
     this.languageService.changeLanguage(lang);
   }
-
 }

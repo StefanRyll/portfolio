@@ -1,5 +1,12 @@
 @import "./../../styles.scss";
 @import "./../../mixin.scss";
+.imprint-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 section {
     @include flexBox(center, center);
     flex-direction: column;
@@ -27,9 +34,3 @@ section {
         align-items: flex-start;
     }
 }
-
-// @media (max-width: 700px) {
-//     .imprint-source {
-//         @include flexBox(center, center);
-//     }
-// }

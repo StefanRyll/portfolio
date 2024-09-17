@@ -5,6 +5,7 @@
         "scrollBtn": "Zum Portfolio"
     },
     "header": {
+        "home": "Startseite",
         "about": "Über mich",
         "projects": "Projekte",
         "contact": "Kontakt"

@@ -10,11 +10,9 @@
 
     <nav>
         <div class="desktop-menu">
-
             <a href="#about-me" class="link-hover">{{ "header.about" | translate }}</a>
             <a href="#projects" class="link-hover">{{ "header.projects" | translate }}</a>
             <a href="#contacts" class="link-hover">{{ "header.contact" | translate }}</a>
-
             <div class="change-lang">
                 <div (click)="switchLanguage('de')" class="border-right">
                     <img src="./assets/img/flags/germany.png" alt="german language">
@@ -39,7 +37,7 @@
                     <li><a (click)="toggleMenu('about-me')" class="link-hover">{{ "header.about" | translate }}</a></li>
                     <li><a (click)="toggleMenu('projects')" class="link-hover">{{ "header.projects" | translate }}</a></li>
                     <li><a (click)="toggleMenu('contacts')" class="link-hover">{{ "header.contact" | translate }}</a></li>
-                    <div class="change-lang">
+                    <div class="change-lang" id="changeLang">
                         <div (click)="switchLanguage('de')" class="border-right">
                             <img src="./assets/img/flags/germany.png" alt="german language">
                         </div>
