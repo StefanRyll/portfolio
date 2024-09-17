@@ -1,0 +1,35 @@
+@import "./../../styles.scss";
+@import "./../../mixin.scss";
+section {
+    @include flexBox(center, center);
+    flex-direction: column;
+    color: var(--font-color);
+    padding: 4rem 0 4rem 0;
+    a {
+        text-decoration: none;
+    }
+    div {
+        @include flexBox(center, center);
+        flex-direction: column;
+        h3 {
+            margin: 1.5rem;
+        }
+    }
+    .imprint-contact,
+    .imprint-source {
+        margin-bottom: 2rem;
+    }
+}
+
+section {
+    .project-source {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+// @media (max-width: 700px) {
+//     .imprint-source {
+//         @include flexBox(center, center);
+//     }
+// }

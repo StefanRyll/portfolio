@@ -1,0 +1,55 @@
+<section>
+    <a href="#hero">
+        <h1>
+            <p>STE</p>
+            <p class="p-color">FAN</p>&nbsp;
+            <p>RY</p>
+            <p class="p-color">LL</p>
+        </h1>
+    </a>
+
+    <nav>
+        <div class="desktop-menu">
+
+            <a href="#about-me" class="link-hover">{{ "header.about" | translate }}</a>
+            <a href="#projects" class="link-hover">{{ "header.projects" | translate }}</a>
+            <a href="#contacts" class="link-hover">{{ "header.contact" | translate }}</a>
+
+            <div class="change-lang">
+                <div (click)="switchLanguage('de')" class="border-right">
+                    <img src="./assets/img/flags/germany.png" alt="german language">
+                </div>
+                <div (click)="switchLanguage('en')">
+                    <img src="./assets/img/flags/england.png" alt="english language">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <input type="checkbox" [class.active]="isActive" id="checkbox" class="checkbox visuallyHidden">
+            <label for="checkbox" (click)="activeMenu()">
+            <div class="hamburger">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+            <div class="menuToggle">
+                <ul class="menuItem">
+                    <li><a (click)="toggleMenu('hero')" class="link-hover">{{ "header.home" | translate }}</a></li>
+                    <li><a (click)="toggleMenu('about-me')" class="link-hover">{{ "header.about" | translate }}</a></li>
+                    <li><a (click)="toggleMenu('projects')" class="link-hover">{{ "header.projects" | translate }}</a></li>
+                    <li><a (click)="toggleMenu('contacts')" class="link-hover">{{ "header.contact" | translate }}</a></li>
+                    <div class="change-lang">
+                        <div (click)="switchLanguage('de')" class="border-right">
+                            <img src="./assets/img/flags/germany.png" alt="german language">
+                        </div>
+                        <div (click)="switchLanguage('en')">
+                            <img src="./assets/img/flags/england.png" alt="english language">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </label>
+        </div>
+    </nav>
+</section>

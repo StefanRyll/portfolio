@@ -1,0 +1,39 @@
+@import "./../../styles.scss";
+@import "./../../mixin.scss";
+section {
+    @include flexBox(center, flex-start);
+    flex-direction: column;
+    color: var(--font-color);
+    margin: 4.5rem 9rem 0 9rem;
+    div {
+        @include flexBox(center, flex-start);
+        flex-direction: column;
+        h2 {
+            margin: 2.8rem 0 .7rem 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    .last-text {
+        margin-bottom: 4.5rem;
+    }
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+@media (max-width: 750px) {
+    section {
+        margin: 4.5rem 4rem 0 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        margin: 3rem 1.5rem 0 1.5rem;
+    }
+}

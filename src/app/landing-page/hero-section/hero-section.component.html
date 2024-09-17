@@ -1,0 +1,23 @@
+<section class="desktop-hero-section">
+    <div class="row" *ngFor="let _ of [].constructor(30)">
+        <div>
+            <i *ngFor="let icon of bgIcons" class="svg-icon" [style.background-image]="'url(' + icon +')'"></i>
+        </div>
+    </div>
+    <div class="change-lang">
+        <div (click)="switchLanguage('de')" class="border-right">
+            <img src="./assets/img/flags/germany.png" alt="german language">
+        </div>
+        <div (click)="switchLanguage('en')">
+            <img src="./assets/img/flags/england.png" alt="english language">
+        </div>
+    </div>
+    <app-welcome-container></app-welcome-container>
+</section>
+
+<section class="mobile-hero-section">
+    <div class="img-box" data-aos="zoom-in-right" data-aos-delay="100">
+        <img src="./assets/img/profile-img.jpg" alt="Profile Image">
+    </div>
+    <app-welcome-container></app-welcome-container>
+</section>

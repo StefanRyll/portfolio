@@ -1,0 +1,9 @@
+<section>
+    <h1 data-aos="fade-down" data-aos-delay="400" data-aos-duration="1500">{{ "hero.greeting" | translate }}</h1>
+    <div class="type-out-container" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="typed-out">
+            {{ "hero.greetingSubText" | translate }}
+        </div>
+    </div>
+    <a (click)="navigateTo('about-me')" class="scroll-btn btn-hover" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><span>{{ "hero.scrollBtn" | translate }}</span><img src="./assets/img/arrow-down.svg"></a>
+</section>

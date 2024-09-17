@@ -1,0 +1,71 @@
+{
+    "hero": {
+        "greeting": "Hello, I'm Stefan",
+        "greetingSubText": "I am Frontend Developer from Germany",
+        "scrollBtn": "Scroll down"
+    },
+    "header": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "about": {
+        "headline": "About",
+        "aboutMeText": "Hello, I am Stefan Ryll and I am a Frontend developer from Worms City in Germany. Through an intensive training program, I have learned the latest web technologies, enabling me to develop innovative web applications.",
+        "aboutMeLight": "With years of experience in customer service, I bring a customer-oriented approach to the development of web applications. The goal is to create user-friendly solutions that are intuitive and provide a high level of user experience.",
+        "aboutMePuzzle": "I am characterized by a complex way of thinking, strong analytical skills, and a well-developed spatial awareness. Additionally, I am creative and find innovative solutions to challenging problems. With my acquired knowledge and communication skills, I am well-equipped to successfully tackle even major challenges."
+    },
+    "projects": {
+        "headline": "Projects",
+        "join": "My Kanban board combines contact management and task planning in a seamless, user-friendly tool. It allows for efficient contact storage, easy task creation, and structured organization. With our intuitive drag-and-drop interface, you can always keep an eye on your projects and boost your productivity.",
+        "elPolloLoco": "El Pollo Loco is a compact, cartoon-style jump-and-run game. The goal is to defeat enemies with well-aimed jumps and outsmart the final boss with cleverly thrown salsa bottles. Beware: the final boss can charge forward."
+    },
+    "contact": {
+        "headline": "Contact",
+        "name": "Your Name",
+        "eMail": "Your E-Mail",
+        "message": "Your Message",
+        "privacy-policy-first": "I've read the",
+        "privacy-policy-link": "privacy policy",
+        "privacy-policy-second": "and agree to the processing of my data as outlined.",
+        "messageBtn": "Send message",
+        "requiredName": "Your name is required (minimum length: 2)",
+        "requiredEmail": "Your email is required",
+        "requiredMessage": "Your message is required (minimum length: 5)"
+    },
+    "footer": {
+        "imprint": "Imprint",
+        "privacy": "Privacy Policy"
+    },
+    "imprint": {
+        "headline": "Imprint",
+        "paragraph": "According to § 5 TMG",
+        "contact": "Contact",
+        "phone": "Phone",
+        "email": "Email",
+        "source": "Information about the source of the images and graphics material used:",
+        "graphics": "Graphics and Images",
+        "sounds": "Sounds",
+        "music": "Music"
+    },
+    "privacy": {
+        "headline": "Privacy Policy",
+        "1.paragraph": "1. Information Collection",
+        "1.paragraphText": "We collect personal data from visitors to our website when they contact us via the contact form. Providing your name, email address, and the content of your message is required to process your request.",
+        "2.paragraph": "2. Use of Information",
+        "2.paragraphText": "The personal data you provide will only be used to respond to your inquiries. This information will not be shared with third parties or used for other purposes.",
+        "3.paragraph": "3. Cookies and Tracking",
+        "3.paragraphText": "Our website does not use cookies or other tracking technologies to monitor visitors' behavior or collect information about their use of the website.",
+        "4.paragraph": "4. Disclosure of Information to Third Parties",
+        "4.paragraphText": "We do not disclose your personal data to third parties. Your information remains confidential and is only used for direct communication between you and us.",
+        "5.paragraph": "5. Security",
+        "5.paragraphText": "We take appropriate measures to ensure the security of your personal information and protect it from unauthorized access, loss, misuse, or alteration. Please note that no data transmission over the internet can be guaranteed to be completely secure, and we cannot ensure the security of data sent to our website.",
+        "6.paragraph": "6. User Rights",
+        "6.paragraphText": "Since no registration is required on our website, we only collect information provided through the contact form. You have the right to request information about your stored personal data as well as its correction or deletion, as far as legally permissible.",
+        "7.paragraph": "7. Contact Information",
+        "7.paragraphText1": "If you have any questions or concerns about the protection of your data by us, you can reach us at any time via email at ",
+        "7.paragraphText2": "The person responsible for data processing conducted through this website is:",
+        "8.changes": "Changes to the Privacy Policy",
+        "8.changesText": "We reserve the right to change this privacy policy. We will inform you appropriately of any significant changes. Continued use of our website after such changes constitutes your consent to our updated practices."
+    }
+}

@@ -1,0 +1,41 @@
+<section>
+    <div class="about-headline">
+        <h1 class="headline">{{ "about.headline" | translate }}</h1>
+    </div>
+    <div class="about-main">
+        <div class="about-me-left">
+            <div class="img-box" data-aos="zoom-in-right" data-aos-delay="100">
+                <img src="./assets/img/profile-img.jpg" alt="Profile Image">
+            </div>
+            <div class="about-me-text" data-aos="zoom-in-right" [attr.data-aos-delay]="checkWidth ? '200' : '100'">
+                <span class="about-me-general">{{ "about.aboutMeText" | translate }}</span>
+                <div class="about-me-icon" data-aos="zoom-in-right" [attr.data-aos-delay]="checkWidth ? '300' : '100'">
+                    <img src="./assets/img/light.png">
+                    <span class="text-size">{{ "about.aboutMeLight" | translate }}</span>
+                </div>
+                <div class="about-me-icon" data-aos="zoom-in-right" [attr.data-aos-delay]="checkWidth ? '300' : '100'">
+                    <img src="./assets/img/puzzle.png">
+                    <span class="text-size">{{ "about.aboutMePuzzle" | translate }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills-right">
+            <div class="skills-row">
+                <img class="skills-icons" src="assets/img/skills/angular.png" alt="angular-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '200' : '100'" data-aos-duration="1000">
+                <img class="skills-icons" src="assets/img/skills/css.png" alt="css-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '400' : '100'" data-aos-duration="1000">
+                <img class="skills-icons" src="assets/img/skills/html.png" alt="html-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '200' : '100'" data-aos-duration="1000">
+            </div>
+            <div class="skills-row">
+                <img class="skills-icons" src="assets/img/skills/js.png" alt="js-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '300' : '100'" data-aos-duration="1000" data-aos-offset="500">
+                <img class="skills-icons" src="assets/img/skills/sass.png" alt="scss-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '400' : '100'" data-aos-duration="1000">
+                <img class="skills-icons" src="assets/img/skills/api.png" alt="api-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '500' : '100'" data-aos-duration="1000">
+                <img class="skills-icons" src="assets/img/skills/bootstrap.png" alt="bootstrap-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '600' : '100'" data-aos-duration="1000">
+            </div>
+            <div class="skills-row">
+                <img class="skills-icons" src="assets/img/skills/typescript.png" alt="ts-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '200' : '100'" data-aos-duration="1000">
+                <img class="skills-icons" src="assets/img/skills/git.png" alt="git-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '600' : '100'" data-aos-duration="1000">
+                <img class="skills-icons" src="assets/img/skills/firebase.png" alt="firebase-icon" data-aos="zoom-in" [attr.data-aos-delay]="checkWidth ? '300' : '100'" data-aos-duration="1000">
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,125 @@
+@import "./../../../styles.scss";
+@import "./../../../mixin.scss";
+section {
+    color: var(--font-color);
+    background: var(--darkblue);
+    background-image: url(../../../assets/img/bg-colors/middle-red.png);
+    background-repeat: no-repeat;
+    background-size: 16rem;
+    background-position: 50% 40%;
+    padding: 3rem 9rem 4rem 9rem;
+    @include flexBox(flex-start, center);
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.about-me-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    h2 {
+        text-align: center;
+        margin-bottom: .7rem;
+    }
+    .about-me-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+        font-weight: 200;
+        .about-me-general {
+            font-size: min(calc(14px + (18 - 14) * ((100vw - 320px) / (1048 - 320))), 18px);
+        }
+        .about-me-icon {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            img {
+                min-width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.about-main {
+    @include flexBox(space-around, center);
+    gap: 4rem;
+}
+
+.skills-right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.skills-icons {
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--red);
+    margin: .8rem;
+    padding: 1.4rem;
+    border-radius: 8px;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 1500px) {
+    section {
+        background-image: none;
+        .skills-right {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    section {
+        margin-top: 4rem;
+        padding: 0;
+        .about-me-general {
+            text-align: center;
+            margin: 2.2rem;
+        }
+        .about-me-text {
+            width: 75vw;
+            margin-bottom: 4rem;
+        }
+        .about-main {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .img-box {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .skills-icons {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills-icons {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-height: 700px) {
+    .img-box {
+        display: flex;
+    }
+}

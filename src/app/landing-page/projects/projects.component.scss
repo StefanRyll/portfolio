@@ -1,0 +1,217 @@
+@import "./../../../styles.scss";
+@import "./../../../mixin.scss";
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 9rem 4rem 9rem;
+    background-image: url(../../../assets/img/bg-colors/little-red.png);
+    background-repeat: no-repeat;
+    background-size: 18rem;
+    background-position: 85% 0%;
+}
+
+.project-left,
+.project-right {
+    @include flexBox(space-between, center);
+    margin-bottom: 4rem;
+}
+
+.project-right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 40%;
+    margin: 10px 0;
+    transition: ease all 1.3s;
+    perspective: 1200px;
+}
+
+.card:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg);
+}
+
+img {
+    width: 400px;
+    height: 40%;
+}
+
+.card:hover .cover:before {
+    transform: translateZ(30px);
+}
+
+.card:hover .cover:after {
+    background-color: black;
+}
+
+.card:hover .cover h1 {
+    transform: translateZ(120px);
+}
+
+.card:hover .cover a {
+    transform: translateZ(-120px) rotateY(-180deg);
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: ease all 1.3s;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.cover:before {
+    content: '';
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    transition: ease all 1.3s;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+}
+
+.cover:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    transition: ease all 1.3s;
+    background: rgba(0, 0, 0, .4);
+}
+
+.cover h1 {
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
+    color: var(--font-color);
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    z-index: 3;
+    transform: translateZ(0px);
+}
+
+.card-back {
+    position: absolute;
+    display: flex;
+    gap: .7rem;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    transform: translateZ(-1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-back a {
+    transform-style: preserve-3d;
+    transition: ease transform 2.3s, ease background .5s;
+    transform: translateZ(-1px) rotateY(-180deg);
+    background: transparent;
+    border: 1px solid var(--red);
+    font-weight: 200;
+    font-size: 1.3em;
+    color: var(--font-color);
+    padding: 14px 32px;
+    outline: none;
+    text-decoration: none;
+}
+
+.card-back p {
+    font-size: min(calc(14px + (26 - 20) * ((100vw - 320px) / (1048 - 320))), 26px) !important;
+}
+
+.card-back a:hover {
+    background-color: var(--red);
+}
+
+.project-subscribe {
+    width: 40%;
+    font-weight: 200;
+    color: var(--font-color);
+    h2 {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 4px solid var(--red);
+    }
+}
+
+@media (max-width: 1250px) {
+    section {
+        padding: 0 4rem 0 4rem;
+        gap: 3rem;
+        .project-left,
+        .project-right {
+            justify-content: center;
+            gap: 6rem;
+            margin-bottom: 8rem;
+            .card {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .card-back {
+            flex-direction: column;
+        }
+        .btn-hover {
+            width: 100px;
+        }
+        .cover h1 {
+            bottom: 25px;
+            right: 41px;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    section {
+        background-image: none;
+        padding: 0 8rem 0 8rem;
+        .project-left,
+        .project-right {
+            flex-direction: column;
+            gap: 2rem;
+            .card,
+            .project-subscribe {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 0 4rem 0 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 0 1.5rem 4rem 1.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        height: 200px !important;
+    }
+}

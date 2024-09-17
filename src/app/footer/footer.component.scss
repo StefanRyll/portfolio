@@ -1,0 +1,69 @@
+@import "./../../styles.scss";
+@import "./../../mixin.scss";
+section {
+    @include flexBox(space-between, center);
+    border-top: 2px solid var(--red);
+    margin: 0 9rem 0 9rem;
+    padding: 2rem 0 2rem 0;
+    color: var(--font-color);
+    margin-top: auto;
+    // width: 100%;
+    min-width: 30rem;
+}
+
+.footer-left {
+    @include flexBox(center, flex-start);
+    flex-direction: column;
+    a {
+        font-size: min(calc(14px + (26 - 14) * ((100vw - 320px) / (1048 - 320))), 36px);
+        font-weight: 200;
+    }
+}
+
+.footer-right {
+    @include flexBox(flex-end, center);
+    gap: 1.1rem;
+    a {
+        @include flexBox(center, center);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    a img {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        background-color: transparent;
+        &:hover {
+            background: transparent;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    section {
+        margin: 0 4rem 0 4rem;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    section {
+        flex-direction: column;
+        gap: 1.8rem;
+        margin: 0 2rem 0 2rem;
+        .footer-left {
+            align-items: center;
+        }
+    }
+    .link-hover {
+        padding: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        margin: 0 1rem 0 1rem;
+    }
+}

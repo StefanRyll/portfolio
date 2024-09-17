@@ -1,0 +1,32 @@
+<section>
+    <h1 class="headline">{{ "projects.headline" | translate }}</h1>
+    <div>
+        <ng-container *ngFor="let project of projects; let i = index; let even = even">
+            <div class="project-left" [ngClass]="{ 'project-left': even, 'project-right': !even }">
+
+                <div class="card" [attr.data-aos]="even ? 'flip-right' : 'flip-left'">
+                    <div style="background-image: url('{{ project.image }}');" class="cover item-a">
+                        <h1>{{ project.name }}</h1>
+                        <div class="card-back">
+                            <a class="btn-hover" href="{{ project.git }}" target="_blank">
+                                <p>Github</p>
+                            </a>
+                            <a class="btn-hover" href="{{ project.live }}" target="_blank">
+                                <p>Live App</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-subscribe" data-aos="zoom-in">
+                    <h1>{{ project.name }}</h1>
+                    <h2>{{ project.language }}</h2>
+                    <span class="text-size">
+                        {{ project.description | translate }}
+                    </span>
+                </div>
+
+            </div>
+        </ng-container>
+    </div>
+</section>

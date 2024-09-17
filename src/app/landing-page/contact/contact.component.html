@@ -1,0 +1,137 @@
+<section>
+    <div class="contacts-headline">
+        <h1 class="headline">{{ "contact.headline" | translate }}</h1>
+    </div>
+
+    <div class="bg-container"></div>
+
+    <form (ngSubmit)="submitted()" [formGroup]="contactForm" method="post">
+        <div class="form-group position-relative" [attr.data-aos]="checkWidth ? 'fade-right' : 'zoom-in'" data-aos-delay="200" data-aos-duration="1000">
+            <input type="text" placeholder="{{ 'contact.name' | translate }}" formControlName="name" class="form-control form-control-lg thick" required />
+            <div class="warning">
+                <span *ngIf="
+            contactForm.controls['name'].invalid &&
+            (contactForm.controls['name'].touched ||
+              contactForm.controls['name'].dirty)
+          ">{{ "contact.requiredName" | translate }}</span
+        >
+      </div>
+    </div>
+    <div
+      class="form-group position-relative"
+      [attr.data-aos]="checkWidth ? 'fade-left' : 'zoom-in'"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+    >
+      <input
+        type="email"
+        placeholder="{{ 'contact.eMail' | translate }}"
+        formControlName="email"
+        class="form-control form-control-lg thick"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+      <div class="warning">
+                <span *ngIf="
+            contactForm.controls['email'].invalid &&
+            (contactForm.controls['email'].touched ||
+              contactForm.controls['email'].dirty)
+          ">{{ "contact.requiredEmail" | translate }}</span
+        >
+      </div>
+    </div>
+    <div
+      class="form-group message"
+      [attr.data-aos]="checkWidth ? 'fade-right' : 'zoom-in'"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+    >
+      <textarea
+        minlength="5"
+        class="form-control form-control-lg"
+        cols="30"
+        rows="8"
+        placeholder="{{ 'contact.message' | translate }}"
+        formControlName="message"
+        required
+      ></textarea>
+      <div class="warning">
+                <span *ngIf="
+            contactForm.controls['message'].invalid &&
+            (contactForm.controls['message'].touched ||
+              contactForm.controls['message'].dirty)
+          ">{{ "contact.requiredMessage" | translate }}</span
+        >
+      </div>
+    </div>
+
+    <div class="message-btn-container">
+      <div
+        class="label-div"
+        [attr.data-aos]="checkWidth ? 'fade-left' : 'zoom-in'"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+        <!-- checkbox -->
+        <label>
+          <div class="checkbox-wrapper-12">
+            <div class="cbx">
+              <input formControlName="checked" id="cbx-12" type="checkbox" />
+              <label for="cbx-12"></label>
+              <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+                <path d="M2 8.36364L6.23077 12L13 2"></path>
+              </svg>
+            </div>
+            <!-- Gooey-->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                <filter id="goo-12">
+                  <fegaussianblur
+                    in="SourceGraphic"
+                    stddeviation="4"
+                    result="blur"
+                  ></fegaussianblur>
+                  <fecolormatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7"
+                    result="goo-12"
+                  ></fecolormatrix>
+                  <feblend in="SourceGraphic" in2="goo-12"></feblend>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <div class="checkbox-text">
+            <span class="text-size"
+              >{{ "contact.privacy-policy-first" | translate }}
+              <a routerLink="/privatePolicy" (click)="scrollToTop()" class="font-red">{{
+                "contact.privacy-policy-link" | translate
+              }}</a>
+              {{ "contact.privacy-policy-second" | translate }}</span
+            >
+          </div>
+        </label>
+      </div>
+
+      
+        <button
+          id="successMessage"
+          type="submit"
+          class="msg-btn"
+          [disabled]="
+            !contactForm.valid ||
+            sending ||
+            !contactForm.controls['checked'].value
+          "
+          [class.btn-grey]="
+            !contactForm.valid ||
+            sending ||
+            !contactForm.controls['checked'].value
+          "
+
+          ><span id="contactMessageBtn">{{ "contact.messageBtn" | translate}}</span>
+                </button>
+            </div>
+    </form>
+</section>

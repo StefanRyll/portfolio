@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+        @import "mixin.scss";
+        @import "fonts.scss";
+        * {
+            margin: 0;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var( --darkblue);
+            scroll-behavior: smooth;
+        }
+        
+        .content {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        
+         :root {
+            --orange: #FA7902;
+            --red: #FF4747;
+            --darkblue: #141D2F;
+            --grey: #bbbbbb;
+            --darkblue-trans: rgba(20, 29, 47, 0.9);
+            --font-color: rgba(231, 224, 224, 0.993);
+            --green: #4DF973;
+        }
+        
+        .d-none {
+            display: none !important;
+        }
+        
+        .no-scroll {
+            overflow: hidden;
+        }
+        
+        .link-hover {
+            text-decoration: none;
+            cursor: pointer;
+            padding-bottom: .3rem;
+            color: var(--font-color);
+            transition: .15s ease-in-out;
+            &:hover {
+                color: var(--red);
+            }
+        }
+        
+        .btn-hover {
+            @include flexBox(center, center);
+            background-repeat: no-repeat;
+            background-position: right;
+            border: 2px solid var(--red);
+            border-radius: 2rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            overflow: hidden;
+            padding: 0.8rem;
+            position: relative;
+            transition: .2s transform ease-in-out;
+            will-change: transform;
+            gap: .5rem;
+            &::after {
+                background-color: var(--red);
+                border-radius: 2rem;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-100%, 0) rotate(10deg);
+                transform-origin: top left;
+                transition: .2s transform ease-out;
+                will-change: transform;
+                z-index: -1;
+            }
+            &:hover::after {
+                transform: translate(0, 0);
+            }
+            &:hover {
+                border: 2px solid transparent;
+                transform: scale(1.05);
+                will-change: transform;
+            }
+        }
+        
+        .headline {
+            position: relative;
+            z-index: 999;
+            margin: 4rem 4rem 4rem 4rem;
+            color: var(--font-color);
+            text-align: center;
+        }
+        
+        .headline:before {
+            position: absolute;
+            content: '';
+            border-bottom: min(calc(6px + (12 - 6) * ((100vw - 320px) / (1048 - 320))), 12px) solid var(--red);
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            left: 1.5rem;
+            top: 4rem;
+            z-index: -1;
+        }
+        
+        .change-lang {
+            // position: fixed;
+            // top: 1rem;
+            // right: 2rem;
+            @include flexBox(center, center);
+            color: var(--red);
+            gap: .5rem;
+            font-size: 2.5rem;
+            img {
+                width: auto;
+                height: 25px;
+                cursor: pointer;
+                transition: 225ms ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            .border-right {
+                @include flexBox(center, center);
+                height: 35px;
+                padding-right: .5rem;
+                border-right: 2px solid var(--red);
+            }
+        }
+        
+        h1,
+        h2 {
+            font-weight: 400;
+        }
+        
+        h1 {
+            font-size: min(calc(20px + (40 - 20) * ((100vw - 320px) / (1048 - 320))), 50px);
+        }
+        
+        h2 {
+            font-size: min(calc(14px + (26 - 14) * ((100vw - 320px) / (1048 - 320))), 36px);
+        }
+        
+        .text-size {
+            font-size: min(calc(12px + (16 - 12) * ((100vw - 320px) / (1048 - 320))), 16px);
+        }
+        
+        a {
+            cursor: pointer;
+        }
+        
+        .img-box img {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            object-position: 0 20%;
+            border-radius: 50%;
+            border: 2px solid var(--red);
+        }
+        
+        @media (max-width: 1400px) {
+            .headline:before {
+                top: min(calc(26px + (64 - 26) * ((100vw - 320px) / (1400 - 320))), 64px);
+            }
+        }
+        
+        @media (max-width: 460px) {
+            .img-box img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        @media (max-height: 750px) {
+            .img-box img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        @media screen and (min-width: 1921px) {
+            .content {
+                max-width: 1920px;
+            }
+        }

@@ -1,0 +1,71 @@
+{
+    "hero": {
+        "greeting": "Hallo, Mein Name ist Stefan",
+        "greetingSubText": "Ich bin Frontend Entwickler aus Deutschland",
+        "scrollBtn": "Zum Portfolio"
+    },
+    "header": {
+        "about": "Über mich",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+    "about": {
+        "headline": "Über mich",
+        "aboutMeText": "Hallo, ich bin Stefan Ryll und bin ein Frontend-Entwickler aus Worms in Deutschland. Durch ein intensives Trainingsprogramm habe ich die neuesten Webtechnologien erlernt, die es mir ermöglichen, innovative Webanwendungen zu entwickeln.",
+        "aboutMeLight": "Mit jahrelanger Erfahrung im Kundenservice bringe ich einen kundenorientierten Ansatz mit in die Entwicklung von Webanwendungen ein. Ziel ist es, benutzerfreundliche Lösungen zu schaffen, die intuitiv sind und ein hohes Benutzererlebnis bieten.",
+        "aboutMePuzzle": "Ich zeichne mich durch eine komplexe Denkweise, starke analytische Fähigkeiten und ein gut entwickeltes räumliches Vorstellungsvermögen aus. Zudem bin ich kreativ und finde innovative Lösungen für anspruchsvolle Probleme. Mit meinem erworbenen Wissen und meinen Kommunikationsfähigkeiten bin ich gut gerüstet, um auch große Herausforderungen erfolgreich zu meistern."
+    },
+    "projects": {
+        "headline": "Projekte",
+        "join": "Mein Kanban-Board kombiniert Kontaktmanagement und Aufgabenplanung in einem nahtlosen, benutzerfreundlichen Tool. Es ermöglicht eine effiziente Kontaktspeicherung, einfache Aufgabenerstellung und eine strukturierte Organisation. Mit unserer intuitiven Drag-and-Drop-Oberfläche behalten Sie Ihre Projekte stets im Blick und steigern Ihre Produktivität.",
+        "elPolloLoco": "El Pollo Loco ist ein kompaktes Jump-and-Run-Spiel im Cartoon-Stil. Ziel ist es, Feinde mit gezielten Sprüngen zu besiegen und den Endgegner mit geschickt geworfenen Salsa-Flaschen auszutricksen. Vorsicht: Der Endgegner kann vorwärts stürmen."
+    },
+    "contact": {
+        "headline": "Kontakt",
+        "name": "Ihr Name",
+        "eMail": "Ihre E-Mail",
+        "message": "Ihre Nachricht",
+        "privacy-policy-first": "Ich habe die",
+        "privacy-policy-link": "Datenschutzerklärung",
+        "privacy-policy-second": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "messageBtn": "Nachricht senden",
+        "requiredName": "Ihr Name ist erforderlich (Mindestlänge: 2)",
+        "requiredEmail": "Ihre E-Mail-Adresse ist erforderlich",
+        "requiredMessage": "Ihre Nachricht ist erforderlich (Mindestlänge: 5)"
+    },
+    "footer": {
+        "imprint": "Impressum",
+        "privacy": "Datenschutz"
+    },
+    "imprint": {
+        "headline": "Impressum",
+        "paragraph": "Angaben gemäß § 5 TMG",
+        "contact": "Kontakt",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "source": "Angaben der Quelle für verwendetes Bilder- und Grafikmaterial:",
+        "graphics": "Grafiken und Bilder",
+        "sounds": "Töne",
+        "music": "Musik"
+    },
+    "privacy": {
+        "headline": "Datenschutzerklärung",
+        "1.paragraph": "1. Erfassung von Informationen",
+        "1.paragraphText": "Wir sammeln personenbezogene Daten von Besuchern unserer Website, wenn sie über das Kontaktformular mit uns in Kontakt treten. Die Angabe Ihres Namens, Ihrer E-Mail-Adresse und des Inhalts Ihrer Nachricht ist erforderlich, um Ihre Anfrage zu bearbeiten.",
+        "2.paragraph": "2. Nutzung der Informationen",
+        "2.paragraphText": "Die von Ihnen bereitgestellten personenbezogenen Daten werden ausschließlich zur Beantwortung Ihrer Anfragen verwendet. Diese Informationen werden nicht mit Dritten geteilt oder für andere Zwecke verwendet.",
+        "3.paragraph": "3. Cookies und Tracking",
+        "3.paragraphText": "Unsere Website verwendet keine Cookies oder andere Tracking-Technologien, um das Verhalten der Besucher zu überwachen oder Informationen über deren Nutzung der Website zu sammeln.",
+        "4.paragraph": "4. Weitergabe von Informationen an Dritte",
+        "4.paragraphText": "Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter. Ihre Informationen bleiben vertraulich und werden nur für die direkte Kommunikation zwischen Ihnen und uns verwendet.",
+        "5.paragraph": "5. Sicherheit",
+        "5.paragraphText": "Wir ergreifen geeignete Maßnahmen, um die Sicherheit Ihrer persönlichen Informationen zu gewährleisten und sie vor unbefugtem Zugriff, Verlust, Missbrauch oder Veränderungen zu schützen. Bitte beachten Sie, dass keine Datenübertragung über das Internet vollständig sicher garantiert werden kann und wir die Sicherheit von Daten, die an unsere Website gesendet werden, nicht gewährleisten können.",
+        "6.paragraph": "6. Nutzerrechte",
+        "6.paragraphText": "Da keine Registrierung auf unserer Website erforderlich ist, sammeln wir nur Informationen, die über das Kontaktformular bereitgestellt werden. Sie haben das Recht, Informationen über Ihre gespeicherten personenbezogenen Daten sowie deren Korrektur oder Löschung zu beantragen, soweit dies rechtlich zulässig ist.",
+        "7.paragraph": "7. Kontaktinformationen",
+        "7.paragraphText1": "Bei Fragen oder Anliegen zum Schutz Ihrer Daten durch uns erreichen Sie uns jederzeit per E-Mail unter ",
+        "7.paragraphText2": "Verantwortlich für die Datenbearbeitungen, die über diese Website erfolgen, ist:",
+        "8.changes": "Änderungen der Datenschutzrichtlinie",
+        "8.changesText": "Wir behalten uns das Recht vor, diese Datenschutzrichtlinie zu ändern. Wir werden Sie angemessen über alle wesentlichen Änderungen informieren. Die fortgesetzte Nutzung unserer Website nach solchen Änderungen gilt als Ihre Zustimmung zu unseren aktualisierten Praktiken."
+    }
+}
