@@ -6,7 +6,8 @@ section {
     @include flexBox(space-between, center);
     background: transparent;
     background-color: var(--darkblue-trans);
-    padding: 0 3rem 0 3rem;
+    // padding: 0 2rem 0 2rem;
+    padding: 0 9rem 0 9rem;
     color: var(--font-color);
     height: 6rem;
     z-index: 9999;
@@ -181,6 +182,9 @@ nav,
 }
 
 @media (max-width: 900px) {
+    section {
+        padding: 0 2rem 0 2rem;
+    }
     .mobile-menu {
         display: flex;
         align-items: center;

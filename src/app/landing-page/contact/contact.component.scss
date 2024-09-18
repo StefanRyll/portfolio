@@ -3,6 +3,7 @@
 section {
     @include flexBox(center, center);
     flex-direction: column;
+    padding-top: 2rem;
     margin-bottom: 4rem;
     background-image: url(../../../assets/img/bg-colors/big-red.png);
     background-repeat: no-repeat;

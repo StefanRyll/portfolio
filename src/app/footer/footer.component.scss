@@ -14,7 +14,7 @@ section {
     @include flexBox(center, flex-start);
     flex-direction: column;
     a {
-        font-size: min(calc(20px + (33 - 20) * ((100vw - 320px) / (1048 - 320))), 33px);
+        font-size: min(calc(20px + (28 - 20) * ((100vw - 320px) / (1048 - 320))), 28px);
         font-weight: 200;
     }
 }
@@ -24,8 +24,8 @@ section {
     gap: 1.1rem;
     a {
         @include flexBox(center, center);
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
         border-radius: 50%;
     }
     a img {
