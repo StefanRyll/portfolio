@@ -44,6 +44,10 @@ section {
     }
 }
 
+.aboutMe-headline {
+    min-width: 120px;
+}
+
 .about-main {
     @include flexBox(space-around, center);
     gap: 4rem;

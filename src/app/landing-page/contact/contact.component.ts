@@ -58,11 +58,9 @@ export class ContactComponent implements OnInit {
 
     this.https.post(endpoint, postVars).subscribe(
       (res) => {
-        console.log(res);
         this.handleSuccess();
       },
       (err) => {
-        console.log(err.statusText);
         setTimeout(() => {
           if (err.statusText == 'OK') {
             this.sending = false;

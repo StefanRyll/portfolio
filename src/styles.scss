@@ -15,6 +15,7 @@
         .hero-content {
             margin: 0 auto;
             max-width: 100%;
+            height: 100vh;
         }
         
          :root {
@@ -25,6 +26,13 @@
             --darkblue-trans: rgba(20, 29, 47, 0.9);
             --font-color: rgba(231, 224, 224, 0.993);
             --green: #4DF973;
+        }
+        
+        .imprint-privacy-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         
         .d-none {
@@ -103,7 +111,7 @@
             margin: 0 auto;
             position: relative;
             left: 1.5rem;
-            top: 4rem;
+            top: min(calc(6px + (64 - 18) * ((100vw - 320px) / (1920 - 320))), 64px);
             z-index: -1;
         }
         
@@ -177,6 +185,12 @@
         }
         
         @media (max-width: 1400px) {
+            .headline:before {
+                top: min(calc(7px + (64 - 18) * ((100vw - 320px) / (1400 - 320))), 64px);
+            }
+        }
+        
+        @media (max-width: 900px) {
             .headline:before {
                 top: min(calc(26px + (64 - 26) * ((100vw - 320px) / (1400 - 320))), 64px);
             }
