@@ -11,11 +11,11 @@ export class LanguageService {
   setDefaultLanguage() {
     const defaultLang = 'de';
     this.translateService.use(defaultLang);
-    document.documentElement.lang = defaultLang; // Setzt das Sprachattribut des HTML-Dokuments
+    document.documentElement.lang = defaultLang; // Set the language attribute of the HTML document
   }
   
   changeLanguage(lang: string) {
     this.translateService.use(lang);
-    document.documentElement.lang = lang; // Aktualisiert das Sprachattribut des HTML-Dokuments
+    document.documentElement.lang = lang; // Update the language attribute of the HTML document
   }
 }

@@ -32,11 +32,13 @@
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
       <div class="warning">
-                <span *ngIf="
+        <span
+          *ngIf="
             contactForm.controls['email'].invalid &&
             (contactForm.controls['email'].touched ||
               contactForm.controls['email'].dirty)
-          ">{{ "contact.requiredEmail" | translate }}</span
+          "
+          >{{ "contact.requiredEmail" | translate }}</span
         >
       </div>
     </div>
@@ -56,11 +58,13 @@
         required
       ></textarea>
       <div class="warning">
-                <span *ngIf="
+        <span
+          *ngIf="
             contactForm.controls['message'].invalid &&
             (contactForm.controls['message'].touched ||
               contactForm.controls['message'].dirty)
-          ">{{ "contact.requiredMessage" | translate }}</span
+          "
+          >{{ "contact.requiredMessage" | translate }}</span
         >
       </div>
     </div>
@@ -105,32 +109,36 @@
           <div class="checkbox-text">
             <span class="text-size"
               >{{ "contact.privacy-policy-first" | translate }}
-              <a routerLink="/privatePolicy" (click)="scrollToTop()" class="font-red">{{
-                "contact.privacy-policy-link" | translate
-              }}</a>
+              <a
+                routerLink="/privatePolicy"
+                (click)="scrollToTop()"
+                class="font-red"
+                >{{ "contact.privacy-policy-link" | translate }}</a
+              >
               {{ "contact.privacy-policy-second" | translate }}</span
             >
           </div>
         </label>
       </div>
 
-      
-        <button
-          id="successMessage"
-          type="submit"
-          class="msg-btn"
-          [disabled]="
-            !contactForm.valid ||
-            sending ||
-            !contactForm.controls['checked'].value
-          "
-          [class.btn-grey]="
-            !contactForm.valid ||
-            sending ||
-            !contactForm.controls['checked'].value
-          "
-
-          ><span id="contactMessageBtn">{{ "contact.messageBtn" | translate}}</span>
+      <button
+        id="successMessage"
+        type="submit"
+        class="msg-btn"
+        [disabled]="
+          !contactForm.valid ||
+          sending ||
+          !contactForm.controls['checked'].value
+        "
+        [class.btn-grey]="
+          !contactForm.valid ||
+          sending ||
+          !contactForm.controls['checked'].value
+        "
+      >
+        <span id="contactMessageBtn">{{
+          "contact.messageBtn" | translate
+        }}</span>
                 </button>
             </div>
     </form>

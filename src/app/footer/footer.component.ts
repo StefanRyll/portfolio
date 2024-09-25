@@ -15,7 +15,7 @@ export class FooterComponent {
   constructor(private scrollService: ScrollService) {}
 
     /**
-   * Navigates to the privacy policy page and scrolls to the top.
+   * Navigates to the other pages and scrolls to the top.
    */
     scrollToTop() {
       this.scrollService.scrollToTop();

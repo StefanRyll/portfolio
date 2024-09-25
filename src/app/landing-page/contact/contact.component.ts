@@ -28,7 +28,7 @@ import { ScrollService } from '../../services/scroll.service';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements OnInit {
-
+  
   public contactForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(2)]),
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -109,8 +109,8 @@ export class ContactComponent implements OnInit {
   }
 
   /**
-  * Navigates to the privacy policy page and scrolls to the top.
-  */
+   * Navigates to the privacy policy page and scrolls to the top.
+   */
   scrollToTop() {
     this.scrollService.scrollToTop();
   }
@@ -119,5 +119,12 @@ export class ContactComponent implements OnInit {
     AOS.init();
   }
 
-  checkWidth:any = window.innerWidth > 950; 
+  /**
+   * Checks if the window's width is greater than 950 pixels.
+   * Sets the variable `checkWidth` to `true` if the window width exceeds 950 pixels,
+   * otherwise sets it to `false`.
+   *
+   * @type {boolean} checkWidth - Indicates whether the window width is greater than 950 pixels.
+   */
+  checkWidth: any = window.innerWidth > 950;
 }

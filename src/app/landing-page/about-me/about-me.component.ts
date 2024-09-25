@@ -15,5 +15,13 @@ export class AboutMeComponent implements OnInit {
 ngOnInit(): void {
   AOS.init();
 }
+
+/**
+ * Checks if the window's width is greater than 950 pixels.
+ * Sets the variable `checkWidth` to `true` if the window width exceeds 950 pixels,
+ * otherwise sets it to `false`.
+ * 
+ * @type {boolean} checkWidth - Indicates whether the window width is greater than 950 pixels.
+ */
 checkWidth:any = window.innerWidth > 950; 
 }

@@ -107,15 +107,11 @@ form {
 
 .btn-grey {
     @include flexBox(center, center);
-    outline: none;
-    height: 60px;
-    display: flex;
-    width: 220px;
-    padding: 0.8rem;
-    border-radius: 40px;
-    font-size: 1.2rem;
-    background: var(--grey) !important;
+    border: 2px solid var(--grey) !important;
     cursor: not-allowed !important;
+    &:hover {
+        background: transparent !important;
+    }
 }
 
 // message success animation --begin
@@ -123,7 +119,6 @@ form {
     @include flexBox(center, center);
     outline: none;
     height: 60px;
-    display: flex;
     width: 220px;
     padding: 0.8rem;
     border-radius: 40px;

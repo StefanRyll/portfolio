@@ -26,17 +26,6 @@ switchLanguage(lang: string) {
   this.languageService.changeLanguage(lang);
 }
 
-// setDefaultLanguage() {
-//   const defaultLang = 'de';
-//   this.translateService.use(defaultLang);
-//   document.documentElement.lang = defaultLang; // Setzt das Sprachattribut des HTML-Dokuments
-// }
-
-// switchLanguage(lang: string) {
-//   this.translateService.use(lang);
-//   document.documentElement.lang = lang; // Aktualisiert das Sprachattribut des HTML-Dokuments
-// }
-
 activeMenu() {
   this.isMenuActive = !this.isMenuActive;
   if (this.isMenuActive) {
@@ -49,13 +38,15 @@ activeMenu() {
 toggleMenu(link?: string) {
   this.isActive = !this.isActive;
   setTimeout(() => {
-    this.scrollService.moveToHomePage(link);
-  }, 200);
-  if (link) {
-    const element = document.getElementById(link);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      this.scrollService.moveToHomePage(link);
+    }, 200);
+    if (link) {
+      const element = document.getElementById(link);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }
+}, 200);
 }
 }
