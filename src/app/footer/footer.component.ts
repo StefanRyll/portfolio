@@ -6,18 +6,19 @@ import { ScrollService } from '../services/scroll.service';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [ TranslateModule, RouterLink ],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-
   constructor(private scrollService: ScrollService) {}
 
-    /**
+  currentYear: number = new Date().getFullYear();
+
+  /**
    * Navigates to the other pages and scrolls to the top.
    */
-    scrollToTop() {
-      this.scrollService.scrollToTop();
-    }
+  scrollToTop() {
+    this.scrollService.scrollToTop();
+  }
 }
