@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-
 interface Project {
   name: string;
   language: string;
@@ -18,16 +17,14 @@ interface Project {
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ CommonModule, TranslateModule ],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent implements AfterViewInit {
-
-  ngAfterViewInit(): void  {
+  ngAfterViewInit(): void {
     AOS.init();
   }
 
   projects: Project[] = PROJECTS;
-
 }
